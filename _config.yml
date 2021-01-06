@@ -102,7 +102,7 @@ analytics:
 author:
   name             : "42seouler"
   avatar           : "/assets/images/profile/bread.jpg" # 프로필 이미지
-  bio              : "C, CPP만 해봤습니다. <br> 잘못 되거나 수정 해야 할 것을 <br> 말해주시면 바로 고칠게요!"
+  bio              : "42서울 과제만 해봤어요. <br> 잘못 되거나 수정 해야 할 것을 <br> 말해주시면 바로 고칠게요!"
   location         : "42Seoul of Gaepo-dong"
   email            : "42seouler@naver.com"
   links:
