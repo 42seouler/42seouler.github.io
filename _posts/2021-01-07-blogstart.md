@@ -1,5 +1,5 @@
 ---
-title: 코그 굽는  git Blog으로 정리하기.
+title: 코드 굽는 git Blog으로 정리하기.
 
 layout: single
 
