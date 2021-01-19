@@ -60,15 +60,15 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 ```
 
-### 단위 테스트
+**단위 테스트**
 
 전체 Spring 애플리케이션 컨텍스트가 시작되지만 서버는 시작하지 않습니다.
 
-#### @WebMvcTest(TestController.class)
+**WebMvcTest(TestController.class)**
 - 서버를 시작 하지 않고 MVC 요청을 모의 요청 및 응답 객체를 통해 수행합니다.
 - Controller만 초기화하고 필요한 나머지 종속성을 제공해야 합니다.
 
-#### @AutoConfigureMockMvc
+**AutoConfigureMockMvc**
 - 자동구성요소 (서블릿 필터)등을 적용 할때 추가로 사용한다.
 
 아래와 같은 종속성을 갖고 있는 Controller가 있다고 가정 합니다.  
@@ -113,9 +113,9 @@ stub까지 준비 되었다면 MockMvc를 통해 Spring Mvc를 테스트하면 �
 주의 해야 할 점은 Mockmvc의 행위를 수행하기 전에 stub까지 완료 되어야 한다는 것 입니다.  
 즉 함수의 호출 순서에 유의하여 테스트 코드를 작성해야 한다는 것 입니다.
 
-### 통합 테스트
+**통합 테스트**
 
-### @SpringBootTest
+**SpringBootTest**
 - 임베디드 서버를 시작하고 애플리케이션 컨텍스트를 완전히 초기화합니다.
 - @Autowired 주석을 사용하요 테스트 클레스에 종속성을 삽입 할 수 있습니다.
 - Mock객체를 사용하지 않고 통합 테스트 할 때 사용하는 어노테이션입니다.
@@ -166,9 +166,9 @@ Controller부분만 검증하면 되서 Slice테스트 한다고 합니다.
 
 JUnit, Mockito 사용하여 Spring서비스 계층을 단위 테스트를 작성합니다.
 
-### 단위 테스트
+**단위 테스트**
 
-#### @ExtendWith(MockitoExtension.class)
+**ExtendWith(MockitoExtension.class)**
 
 - junit4의 @Runwith 어노테이션은 위의 Extendwith로 대체 되었습니다.  
   호환성을 위해 Runwith로 사용 가능 하다고 합니다.
@@ -208,10 +208,9 @@ class UserServiceImplTest {
 > 참고 자료  
 [Mockito 기본 사용법](https://cornswrold.tistory.com/366)  
 
-
 ## Repository 계층 테스트 하는 방법
 
-#### @DataJpaTest
+**DataJpaTest**
 - 전체 자동 구성이 비활성화되고 대신 JPA 테스트와 관련된 구성 만 적용됩니다.  
 - @DataJpaTest는 트랜잭션이며 각 테스트가 끝날 때 롤백됩니다.  
 
