@@ -1,5 +1,5 @@
 ---
-title: 첫번째 프로젝트 회고
+title: 첫번째 프로젝트(albacorn) 회고
 
 layout: single
 
@@ -14,10 +14,10 @@ share: true
 related: true
 
 categories:
-- Java
+- project
 
 tag:
-- spring
+- result
 
 description: 처음이자 실패한 프로젝트 albacorn 후기
 
