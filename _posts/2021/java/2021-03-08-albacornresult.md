@@ -59,7 +59,7 @@ popular: true
 
 #### Golang으로 백엔드 만들기로 잘못된 결정을 내리다.
 
-![](https://images.velog.io/images/memorego/post/f085aceb-ae3f-4173-82fb-7364cd2b5f22/image.png)
+<p align="center"><img src="https://images.velog.io/images/memorego/post/f085aceb-ae3f-4173-82fb-7364cd2b5f22/image.png"/></p>
 
 제가 그나마 알고 있던 웹 개발이 가능한 언어가 Go라서 Go로 만들겠다고 했습니다.  
 굳이 하겠다면 말리지 않겠지만 그럼 일단 해보라고 하셨습니다.  
@@ -79,7 +79,7 @@ popular: true
 
 [그래서 밥 아저씨의 클린 아키텍처 링크](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)를 읽어보고 도입 하기로 했습니다.
 
-![](https://images.velog.io/images/memorego/post/15d179fb-78af-4dcb-b1da-c3db4de18f20/image.png)
+<p align="center"><img src="https://images.velog.io/images/memorego/post/15d179fb-78af-4dcb-b1da-c3db4de18f20/image.png"/></p>
 
 #### 2. 예제 코드들을 찾아보니 command, query를 나누던데? 이건 또 무엇인지?
 
@@ -87,7 +87,8 @@ popular: true
   구조라고 정보를 획득하고 그래도 이러한 예제들이 많으니 알아두면 좋겠지라고 생각하고 해봤습니다.
 
 -CQRS패턴을 위해 command/query 디렉토리를 나눴고, CQ를 포함하는 usecase.go를 만들었습니다.
-![](https://images.velog.io/images/memorego/post/f3b5eb47-66fb-4362-914f-146d6c46513d/image.png)
+
+<p align="center"><img src="https://images.velog.io/images/memorego/post/f3b5eb47-66fb-4362-914f-146d6c46513d/image.png"></p>
 
 #### 3. web에 익숙하지 않지만 그것들을 스스로 처리해야 한다.
 - 웹서비스에 관해 지식이 없는데 스스로 처리해야되서 그것들을 찾아보는데 시간이 오래 걸렸습니다.  
@@ -95,7 +96,7 @@ popular: true
 
 #### 멘토님 피드백
 
-![](https://images.velog.io/images/memorego/post/c5fe8aaa-6773-4538-87bd-f8be9d756648/image.png)
+<p align="center"><img src="https://images.velog.io/images/memorego/post/c5fe8aaa-6773-4538-87bd-f8be9d756648/image.png"/></p>
 
 제가 겪었던 문제점은 자바 스프링을 통해 학습을 했다면 풍부한 레퍼런스와 작성 규칙을 통해 자연스럽게
 체득이 가능 했을텐데 초보자가 너무 돌아 돌아 알게 되었단 것을 알려주셨습니다.  
@@ -181,7 +182,7 @@ Go로 크롤링 하는 예제를 따라 만들어 알바천국, 알바몬을 크
 
 ## 그래서 코드를 모두 삭제하고 정리했습니다.
 
-![](https://images.velog.io/images/memorego/post/8e96b5bc-0e06-407c-ba81-99c60e1b1dee/image.png)
+<p align="center"><img src="https://images.velog.io/images/memorego/post/8e96b5bc-0e06-407c-ba81-99c60e1b1dee/image.png"/></p>
 
 과정은 남겨두었지만 코드를 남겼어야 했는데 코드를 모두 지워버렸습니다.  
 나중에 알게 된 사실이지만 실패한 과정도 하나하나 모두 남겨두어야 한다고 멘토님께서 알려주셨습니다.  
