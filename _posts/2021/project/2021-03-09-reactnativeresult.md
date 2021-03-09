@@ -1,5 +1,5 @@
 ---
-title: react native 채팅앱 만들기
+title: 두번째 react native 채팅앱 만들기
 
 layout: single
 
