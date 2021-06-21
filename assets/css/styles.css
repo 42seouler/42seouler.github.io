@@ -376,6 +376,7 @@ img {
 
 .button--small {
   padding: .75rem 1rem;
+  margin: 0 10px 0 0;
 }
 
 .button--link {
