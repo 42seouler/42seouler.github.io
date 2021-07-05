@@ -128,10 +128,9 @@
 
             <div class="about__data">
                 <p class="about__description">
-                    42서울 교육생이 800명이 넘었지만, 코로나로 인해 밥 먹을 사람 찾기가 어려웠습니다.
-                    그래서 가볍게 밥 먹을 교육생을 찾을 수 있는 서비스를 만들면 좋을 것 같았습니다.
-                    WebRTC API, Vanilla.js, Express.js, HTML, CSS를 사용해서 만들었습니다.
-                    접속된 사람의 소켓 정보를 기반으로 구분하고 사용자 편의를 위해 사용자수를 제공합니다.
+                    42서울 교육이 코로나로 인해 온라인으로 진행 되었습니다.  그에 따른 부작용으로 밥 먹을 교육생을 찾는 것이 쉽지 않았습니다.
+                    어떻게 하면 밥 먹을 교육생을 재밌고 쉽게 찾을 수 있을지 고민하다가 랜덤채팅을 떠올리게 되었습니다. 그래서 소개팅처럼 얼굴을
+                    대면 할 수 있는 환경을 만들어 해결하고자 했습니다.
                 </p>
                 <div class="about__buttons">
                     <!--==================== Change your CV ====================-->
@@ -153,32 +152,14 @@
 
             <div class="about__data">
                 <p class="about__description">
-                    실제 업무환경처럼 데브옵스 환경을 구성하여 진행한 프로젝트입니다.
-                    백엔드, 프론트, 인프라 팀으로 나눠 Jira, Slack 통해 협업했습니다.
-                    AWS의 EC2, RDS로 배포되었습니다.<br>
-                    42OAuth API를 사용하는 Swagger입니다.
+                    42서울 교육장 출입 API 서버에 잦은 장애가 발생했습니다. 그래서 서버 장애가 발생하더라도 출입이 가능해야 했습니다.
+                    출입서버에서 받은 UserInfo를 저장하고 그 정보를 기반으로 자체 JWT를 발행하여 최초 인증, 재로그인시를 제외하고는 출입서버의
+                    장애와 관련없이 입장 할 수 있도록 했습니다.
                 </p>
-
-                <!--                <div class="about__info">-->
-                <!--                    <div>-->
-                <!--                        <span class="about__info-title">01+</span>-->
-                <!--                        <span class="about__info-name">Years <br> experience</span>-->
-                <!--                    </div>-->
-
-                <!--                    <div>-->
-                <!--                        <span class="about__info-title">3+</span>-->
-                <!--                        <span class="about__info-name">Completed <br> project</span>-->
-                <!--                    </div>-->
-
-                <!--                    <div>-->
-                <!--                        <span class="about__info-title">05+</span>-->
-                <!--                        <span class="about__info-name">Companies <br> worked</span>-->
-                <!--                    </div>-->
-                <!--                </div>-->
 
                 <div class="about__buttons">
                     <!--==================== Change your CV ====================-->
-                    <a href="http://3.35.151.102:8080/swagger-ui/#/"
+                    <a href="http://3.141.199.244:8080/swagger-ui/#"
                        class="button button--flex button--small portfolio__button">
                         데모
                         <i class="uil uil-arrow-right button__icon"></i>
@@ -192,502 +173,31 @@
         <br>
         <br>
         <div class="about__container container grid">
-            <img src="assets/img/about.png" alt="" class="about__img">
+            <img src="assets/img/portfolio_3.gif" alt="" class="about__img">
 
             <div class="about__data">
-                <p class="about__description">프로그래머가 되려고 패스트캠퍼스 파이썬강의를 들었습니다.
-                    하지만 강의에서 본 것 외에는 아무것도 할 수 없었습니다. 결국 고민끝에 42서울에 입학하게 되었습니다.
-                    42서울에서 언어와 컴퓨터 과학 뿐만 아니라 적극적으로 대화하고 질문 하는 법을 배울 수 있었습니다.
-                    아무것도 할 수 없었던 나에서 문제를 정의하고 스스로 찾아서 해결 할 수 있는 역량을 키울 수 있었습니다.
+                <p class="about__description">
+                    42서울에서 블라인드처럼 익명성이 보장 된 채팅 공간의 필요성이 대두 되었습니다. 그에 따라 앱 환경에서 가볍게 사용 할 수 있는
+                    채팅 앱을 만들고자 했습니다. AOS, iOS 모두 개발 하는 것은 대안으로 React Native를 사용해 구현하게 되었습니다.
+                    Spring MVC STOMP를 사용하는 공식 가이드를 바탕으로 구현했습니다. 그런데 빈번한 요청이 생길 것으로 예상되어 비동기를 사용하면 좋을 것 같아 Spring Reactive, Rsocket 사용을 검토했습니다. 하지만 많은 시도와 검색을 했지만 Rsocket은 메시지
+                    프로토콜을 직접 정의해야 돼서 현재 사용하긴 어렵다고 생각했습니다. 최종적으로 앱에서 작동 되도록 하기 위해 React Native의 Expo를 바탕으로 프론트엔드를 구현했습니다.
                 </p>
 
                 <div class="about__buttons">
                     <!--==================== Change your CV ====================-->
-                    <a href="https://randommeal.du.r.appspot.com"
+                    <a href="https://github.com/42seouler/react-native-chat"
                        class="button button--flex button--small portfolio__button">
-                        Demo
+                        Github
                         <i class="uil uil-arrow-right button__icon"></i>
                     </a>
-                    <a download="" href="assets/pdf/Alexa-Cv.pdf" class="button button--flex">
-                        Download CV <i class="uil uil-download-alt button__icon"></i>
+                    <a href="https://codebaker.tistory.com/8?category=482424" class="button button--flex">
+                        제작 과정 <i class="uil uil-download-alt button__icon"></i>
                     </a>
                 </div>
             </div>
         </div>
 
     </section>
-
-    <!--==================== SKILLS ====================-->
-    <!--            <section class="skills section" id="skills">-->
-    <!--                <h2 class="section__title">Skills</h2>-->
-    <!--                <span class="section__subtitle">My technical experience</span>-->
-
-    <!--                <div class="skills__container container grid">-->
-    <!--                    <div>-->
-    <!--=============== SKILLS 1 ===============-->
-    <!--                        <div class="skills__content skills__open">-->
-    <!--                            <div class="skills__header">-->
-    <!--                                <i class="uil uil-server-network skills__icon"></i>-->
-    <!--    -->
-    <!--                                <div>-->
-    <!--                                    <h1 class="skills__title">Backend developer</h1>-->
-    <!--                                    <span class="skills__subtitle">More than 6 months</span>-->
-    <!--                                </div>-->
-    <!--    -->
-    <!--                                <i class="uil uil-angle-down skills__arrow"></i>-->
-    <!--                            </div>-->
-    <!--    -->
-    <!--                            <div class="skills__list grid">-->
-    <!--                                <div class="skills__data">-->
-    <!--                                    <div class="skills__titles">-->
-    <!--                                        <h3 class="skills__name">JAVA</h3>-->
-    <!--                                        <span class="skills__number"></span>-->
-    <!--                                    </div>-->
-    <!--                                    <div class="skills__bar">-->
-    <!--                                        <span class="skills__percentage skills__perfect"></span>-->
-    <!--                                    </div>-->
-    <!--                                </div>-->
-    <!--    -->
-    <!--                                <div class="skills__data">-->
-    <!--                                    <div class="skills__titles">-->
-    <!--                                        <h3 class="skills__name">Spring Framework</h3>-->
-    <!--                                        <span class="skills__number"></span>-->
-    <!--                                    </div>-->
-    <!--                                    <div class="skills__bar">-->
-    <!--                                        <span class="skills__percentage skills__perfect"></span>-->
-    <!--                                    </div>-->
-    <!--                                </div>-->
-    <!--    -->
-    <!--                                <div class="skills__data">-->
-    <!--                                    <div class="skills__titles">-->
-    <!--                                        <h3 class="skills__name">JPA (Hibernate)</h3>-->
-    <!--                                        <span class="skills__number"></span>-->
-    <!--                                    </div>-->
-    <!--                                    <div class="skills__bar">-->
-    <!--                                        <span class="skills__percentage skills__perfect"></span>-->
-    <!--                                    </div>-->
-    <!--                                </div>-->
-    <!--                            </div>-->
-
-    <!--                        </div>-->
-
-    <!--=============== SKILLS 2 ===============-->
-    <!--                        <div class="skills__content skills__close">-->
-    <!--                            <div class="skills__header">-->
-    <!--                                <i class="uil uil-brackets-curly skills__icon"></i>-->
-
-    <!--                                <div>-->
-    <!--                                    <h1 class="skills__title">Frontend developer</h1>-->
-    <!--                                    <span class="skills__subtitle">More than 2 months</span>-->
-    <!--                                </div>-->
-    <!--    -->
-    <!--                                <i class="uil uil-angle-down skills__arrow"></i>-->
-    <!--                            </div>-->
-    <!--    -->
-    <!--                            <div class="skills__list grid">-->
-    <!--                                <div class="skills__data">-->
-    <!--                                    <div class="skills__titles">-->
-    <!--                                        <h3 class="skills__name">HTML</h3>-->
-    <!--                                        <span class="skills__number"></span>-->
-    <!--                                    </div>-->
-    <!--                                    <div class="skills__bar">-->
-    <!--                                        <span class="skills__percentage skills__perfect"></span>-->
-    <!--                                    </div>-->
-    <!--                                </div>-->
-    <!--    -->
-    <!--                                <div class="skills__data">-->
-    <!--                                    <div class="skills__titles">-->
-    <!--                                        <h3 class="skills__name">CSS</h3>-->
-    <!--                                        <span class="skills__number"></span>-->
-    <!--                                    </div>-->
-    <!--                                    <div class="skills__bar">-->
-    <!--                                        <span class="skills__percentage skills__perfect"></span>-->
-    <!--                                    </div>-->
-    <!--                                </div>-->
-    <!--    -->
-    <!--                                <div class="skills__data">-->
-    <!--                                    <div class="skills__titles">-->
-    <!--                                        <h3 class="skills__name">JavaScript</h3>-->
-    <!--                                        <span class="skills__number"></span>-->
-    <!--                                    </div>-->
-    <!--                                    <div class="skills__bar">-->
-    <!--                                        <span class="skills__percentage skills__perfect"></span>-->
-    <!--                                    </div>-->
-    <!--                                </div>-->
-    <!--    -->
-    <!--                                <div class="skills__data">-->
-    <!--                                    <div class="skills__titles">-->
-    <!--                                        <h3 class="skills__name">React</h3>-->
-    <!--                                        <span class="skills__number"></span>-->
-    <!--                                    </div>-->
-    <!--                                    <div class="skills__bar">-->
-    <!--                                        <span class="skills__percentage skills__perfect"></span>-->
-    <!--                                    </div>-->
-    <!--                                </div>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-
-    <!--                    <div>-->
-    <!--=============== SKILLS 3 ===============-->
-    <!--                        <div class="skills__content skills__close">-->
-    <!--                            <div class="skills__header">-->
-    <!--                                <i class="uil uil-desktop-cloud-alt skills__icon"></i>-->
-
-    <!--                                <div>-->
-    <!--                                    <h1 class="skills__title">Ops</h1>-->
-    <!--                                    <span class="skills__subtitle">More than 2 months</span>-->
-    <!--                                </div>-->
-    <!--    -->
-    <!--                                <i class="uil uil-angle-down skills__arrow"></i>-->
-    <!--                            </div>-->
-    <!--    -->
-    <!--                            <div class="skills__list grid">-->
-    <!--                                <div class="skills__data">-->
-    <!--                                    <div class="skills__titles">-->
-    <!--                                        <h3 class="skills__name">Jenkins</h3>-->
-    <!--                                        <span class="skills__number"></span>-->
-    <!--                                    </div>-->
-    <!--                                    <div class="skills__bar">-->
-    <!--                                        <span class="skills__percentage skills__perfect"></span>-->
-    <!--                                    </div>-->
-    <!--                                </div>-->
-    <!--    -->
-    <!--                                <div class="skills__data">-->
-    <!--                                    <div class="skills__titles">-->
-    <!--                                        <h3 class="skills__name">Docker</h3>-->
-    <!--                                        <span class="skills__number"></span>-->
-    <!--                                    </div>-->
-    <!--                                    <div class="skills__bar">-->
-    <!--                                        <span class="skills__percentage skills__perfect"></span>-->
-    <!--                                    </div>-->
-    <!--                                </div>-->
-    <!--    -->
-    <!--                                <div class="skills__data">-->
-    <!--                                    <div class="skills__titles">-->
-    <!--                                        <h3 class="skills__name">Ansible</h3>-->
-    <!--                                        <span class="skills__number"></span>-->
-    <!--                                    </div>-->
-    <!--                                    <div class="skills__bar">-->
-    <!--                                        <span class="skills__percentage skills__perfect"></span>-->
-    <!--                                    </div>-->
-    <!--                                </div>-->
-
-    <!--                                <div class="skills__data">-->
-    <!--                                    <div class="skills__titles">-->
-    <!--                                        <h3 class="skills__name">Kubernetes</h3>-->
-    <!--                                        <span class="skills__number"></span>-->
-    <!--                                    </div>-->
-    <!--                                    <div class="skills__bar">-->
-    <!--                                        <span class="skills__percentage skills__perfect"></span>-->
-    <!--                                    </div>-->
-    <!--                                </div>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </section>-->
-
-    <!--==================== QUALIFICATION ====================-->
-
-    <!--==================== SERVICES ====================-->
-    <!--            <section class="services section" id="services">-->
-    <!--                <h2 class="section__title">Services</h2>-->
-    <!--                <span class="section__subtitle">What i offer</span>-->
-
-    <!--                <div class="services__container container grid">-->
-    <!--=============== SERVICES 1 ===============-->
-    <!--                    <div class="services__content">-->
-    <!--                        <div>-->
-    <!--                            <i class="uil uil-web-grid services__icon"></i>-->
-    <!--                            <h3 class="services__title">Ui/Ux <br> Designer</h3>-->
-    <!--                        </div>-->
-    <!--                        <span class="button button&#45;&#45;flex button&#45;&#45;small button&#45;&#45;link services__button">-->
-    <!--                            View More -->
-    <!--                            <i class="uil uil-arrow-right button__icon"></i>-->
-    <!--                        </span>-->
-
-    <!--                        <div class="services__modal">-->
-    <!--                            <div class="services__modal-content">-->
-    <!--                                <h4 class="services__modal-title">Ui/Ux <br> Designer</h4>-->
-    <!--                                <i class="uil uil-times services__modal-close"></i>-->
-    <!--    -->
-    <!--                                <ul class="services__modal-services grid">-->
-    <!--                                    <li class="services__modal-service">-->
-    <!--                                        <i class="uil uil-check-circle services__modal-icon"></i>-->
-    <!--                                        <p>I develop the user interface.</p>-->
-    <!--                                    </li>-->
-    <!--                                    <li class="services__modal-service">-->
-    <!--                                        <i class="uil uil-check-circle services__modal-icon"></i>-->
-    <!--                                        <p>Web page development.</p>-->
-    <!--                                    </li>-->
-    <!--                                    <li class="services__modal-service">-->
-    <!--                                        <i class="uil uil-check-circle services__modal-icon"></i>-->
-    <!--                                        <p>I create ux element interactions.</p>-->
-    <!--                                    </li>-->
-    <!--                                    <li class="services__modal-service">-->
-    <!--                                        <i class="uil uil-check-circle services__modal-icon"></i>-->
-    <!--                                        <p>I position your company brand.</p>-->
-    <!--                                    </li>-->
-    <!--                                </ul>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-
-    <!--=============== SERVICES 2 ===============-->
-    <!--                    <div class="services__content">-->
-    <!--                        <div>-->
-    <!--                            <i class="uil uil-arrow services__icon"></i>-->
-    <!--                            <h3 class="services__title">Frontend <br> Developer</h3>-->
-    <!--                        </div>-->
-
-    <!--                        <span class="button button&#45;&#45;flex button&#45;&#45;small button&#45;&#45;link services__button">-->
-    <!--                            View More -->
-    <!--                            <i class="uil uil-arrow-right button__icon"></i>-->
-    <!--                        </span>-->
-
-    <!--                        <div class="services__modal">-->
-    <!--                            <div class="services__modal-content">-->
-    <!--                                <h4 class="services__modal-title">Frontend <br> Developer</h4>-->
-    <!--                                <i class="uil uil-times services__modal-close"></i>-->
-    <!--    -->
-    <!--                                <ul class="services__modal-services grid">-->
-    <!--                                    <li class="services__modal-service">-->
-    <!--                                        <i class="uil uil-check-circle services__modal-icon"></i>-->
-    <!--                                        <p>I develop the user interface.</p>-->
-    <!--                                    </li>-->
-    <!--                                    <li class="services__modal-service">-->
-    <!--                                        <i class="uil uil-check-circle services__modal-icon"></i>-->
-    <!--                                        <p>Web page development.</p>-->
-    <!--                                    </li>-->
-    <!--                                    <li class="services__modal-service">-->
-    <!--                                        <i class="uil uil-check-circle services__modal-icon"></i>-->
-    <!--                                        <p>I create ux element interactions.</p>-->
-    <!--                                    </li>-->
-    <!--                                    <li class="services__modal-service">-->
-    <!--                                        <i class="uil uil-check-circle services__modal-icon"></i>-->
-    <!--                                        <p>I position your company brand.</p>-->
-    <!--                                    </li>-->
-    <!--                                </ul>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-
-    <!--=============== SERVICES 3 ===============-->
-    <!--                    <div class="services__content">-->
-    <!--                        <div>-->
-    <!--                            <i class="uil uil-pen services__icon"></i>-->
-    <!--                            <h3 class="services__title">Branding <br> Designer</h3>-->
-    <!--                        </div>-->
-
-    <!--                        <span class="button button&#45;&#45;flex button&#45;&#45;small button&#45;&#45;link services__button">-->
-    <!--                            View More -->
-    <!--                            <i class="uil uil-arrow-right button__icon"></i>-->
-    <!--                        </span>-->
-
-    <!--                        <div class="services__modal">-->
-    <!--                            <div class="services__modal-content">-->
-    <!--                                <h4 class="services__modal-title">Branding <br> Designer</h4>-->
-    <!--                                <i class="uil uil-times services__modal-close"></i>-->
-    <!--    -->
-    <!--                                <ul class="services__modal-services grid">-->
-    <!--                                    <li class="services__modal-service">-->
-    <!--                                        <i class="uil uil-check-circle services__modal-icon"></i>-->
-    <!--                                        <p>I develop the user interface.</p>-->
-    <!--                                        -->
-    <!--                                    </li>-->
-    <!--                                    <li class="services__modal-service">-->
-    <!--                                        <i class="uil uil-check-circle services__modal-icon"></i>-->
-    <!--                                        <p>Web page development.</p>-->
-    <!--                                    </li>-->
-    <!--                                    <li class="services__modal-service">-->
-    <!--                                        <i class="uil uil-check-circle services__modal-icon"></i>-->
-    <!--                                        <p>I create ux element interactions.</p>-->
-    <!--                                    </li>-->
-    <!--                                    <li class="services__modal-service">-->
-    <!--                                        <i class="uil uil-check-circle services__modal-icon"></i>-->
-    <!--                                        <p>I position your company brand.</p>-->
-    <!--                                    </li>-->
-    <!--                                </ul>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </section>-->
-
-    <!--==================== PORTFOLIO ====================-->
-    <!--            <section class="portfolio section" id="portfolio">-->
-    <!--                <h2 class="section__title">Portfolio</h2>-->
-    <!--                <span class="section__subtitle">Most recent work</span>-->
-
-    <!--                <div class="portfolio__container container swiper-container">-->
-    <!--                    <div class="swiper-wrapper">-->
-    <!--=============== PORTFOLIO 1 ===============-->
-    <!--                        <div class="portfolio__content grid swiper-slide">-->
-    <!--                            <img src="assets/img/portfolio1.png" alt="" class="portfolio__img">-->
-    <!--    -->
-    <!--                            <div class="portfolio__data">-->
-    <!--                                <h3 class="portfolio__title">DevOps 흐름에 대한 이해</h3>-->
-    <!--                                <p class="portfolio__description">빈번한 수정 및 테스트로 인해 배포 자동화 필요성-->
-    <!--                                    팀원과 협업하기 위해  CI / CD 파이프라인 구축</p>-->
-    <!--                                <a href="#" class="button button&#45;&#45;flex button&#45;&#45;small portfolio__button">-->
-    <!--                                    Demo-->
-    <!--                                    <i class="uil uil-arrow-right button__icon"></i>-->
-    <!--                                </a>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-
-    <!--=============== PORTFOLIO 2 ===============-->
-    <!--                        <div class="portfolio__content grid swiper-slide">-->
-    <!--                            <img src="assets/img/portfolio2.png" alt="" class="portfolio__img">-->
-    <!--    -->
-    <!--                            <div class="portfolio__data">-->
-    <!--                                <h3 class="portfolio__title">WebRTC BMZ</h3>-->
-    <!--                                <p class="portfolio__description">WebRTC를 이용한 chat 또는 video를 통해 랜덤으로 같이 밥 먹을 카뎃을 찾는 서비스</p>-->
-    <!--                                <a href="https://randommeal.du.r.appspot.com" class="button button&#45;&#45;flex button&#45;&#45;small portfolio__button">-->
-    <!--                                    Demo-->
-    <!--                                    <i class="uil uil-arrow-right button__icon"></i>-->
-    <!--                                </a>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-
-    <!--=============== PORTFOLIO 3 ===============-->
-    <!--                        <div class="portfolio__content grid swiper-slide">-->
-    <!--                            <img src="assets/img/portfolio3.png" alt="" class="portfolio__img">-->
-    <!--    -->
-    <!--                            <div class="portfolio__data">-->
-    <!--                                <h3 class="portfolio__title">SPARTA 42</h3>-->
-    <!--                                <p class="portfolio__description">Jira, Confluence로 백엔드, 프론트, 인프라 3팀이 협업,-->
-    <!--                                    에픽을 발행하고 칸반보드로 이슈를 관리하는 프로젝트</p>-->
-    <!--                                <a href="http://3.35.151.102:8080/swagger-ui/#" class="button button&#45;&#45;flex button&#45;&#45;small portfolio__button">-->
-    <!--                                    Demo-->
-    <!--                                    <i class="uil uil-arrow-right button__icon"></i>-->
-    <!--                                </a>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-
-    <!--                    <div class="swiper-button-next">-->
-    <!--                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>-->
-    <!--                    </div>-->
-    <!--                    <div class="swiper-button-prev">-->
-    <!--                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>-->
-    <!--                    </div>-->
-
-    <!--                    <div class="swiper-pagination"></div>-->
-    <!--                </div>-->
-    <!--            </section>-->
-
-    <!--==================== PROJECT IN MIND ====================-->
-    <!--            <section class="project section">-->
-    <!--                <div class="project__bg">-->
-    <!--                    <div class="project__container container grid">-->
-    <!--                        <div class="project__data">-->
-    <!--                            <h2 class="project__title">are you interested in me?</h2>-->
-    <!--                            <p class="project__description">항상 새로운 모험을 좋아하고 재미있게 끝까지 완결합니다.</p>-->
-    <!--                            <a href="#" class="button button&#45;&#45;flex button&#45;&#45;white">-->
-    <!--                                Hire me-->
-    <!--                                <i class="uil uil-message button__icon"></i>-->
-    <!--                            </a>-->
-    <!--                        </div>-->
-    <!--    -->
-    <!--                        <img src="assets/img/project.png" alt="" class="project__img">-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </section>-->
-
-    <!--==================== TESTIMONIAL ====================-->
-    <!--            <section class="testimonial section">-->
-    <!--                <h2 class="section__title">Testimonial</h2>-->
-    <!--                <span class="section__subtitle">My client saying</span>-->
-
-    <!--                <div class="testimonial__container container swiper-container">-->
-    <!--                    <div class="swiper-wrapper">-->
-    <!--=============== TESTIMONIAL 1 ===============-->
-    <!--                        <div class="testimonial__content swiper-slide">-->
-    <!--                            <div class="testimonial__data">-->
-    <!--                                <div class="testimonial__header">-->
-    <!--                                    <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__img">-->
-    <!--        -->
-    <!--                                    <div>-->
-    <!--                                        <h3 class="testimonial__name">Sara Smith</h3>-->
-    <!--                                        <span class="testimonial__client">Client</span>-->
-    <!--                                    </div>-->
-    <!--                                </div>-->
-    <!--    -->
-    <!--                                <div>-->
-    <!--                                    <i class="uil uil-star testimonial__icon-star"></i>-->
-    <!--                                    <i class="uil uil-star testimonial__icon-star"></i>-->
-    <!--                                    <i class="uil uil-star testimonial__icon-star"></i>-->
-    <!--                                    <i class="uil uil-star testimonial__icon-star"></i>-->
-    <!--                                    <i class="uil uil-star testimonial__icon-star"></i>-->
-    <!--                                </div>-->
-    <!--                            </div>-->
-    <!--    -->
-    <!--                            <p class="testimonial__description">I get a good impression, I carry -->
-    <!--                                out my project with all the possible quality and attention and -->
-    <!--                                support 24 hours a day.-->
-    <!--                            </p>-->
-    <!--                        </div>-->
-
-    <!--=============== TESTIMONIAL 2 ===============-->
-    <!--                        <div class="testimonial__content swiper-slide">-->
-    <!--                            <div class="testimonial__data">-->
-    <!--                                <div class="testimonial__header">-->
-    <!--                                    <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__img">-->
-    <!--        -->
-    <!--                                    <div>-->
-    <!--                                        <h3 class="testimonial__name">Matt Robinson</h3>-->
-    <!--                                        <span class="testimonial__client">Client</span>-->
-    <!--                                    </div>-->
-    <!--                                </div>-->
-    <!--    -->
-    <!--                                <div>-->
-    <!--                                    <i class="uil uil-star testimonial__icon-star"></i>-->
-    <!--                                    <i class="uil uil-star testimonial__icon-star"></i>-->
-    <!--                                    <i class="uil uil-star testimonial__icon-star"></i>-->
-    <!--                                    <i class="uil uil-star testimonial__icon-star"></i>-->
-    <!--                                    <i class="uil uil-star testimonial__icon-star"></i>-->
-    <!--                                </div>-->
-    <!--                            </div>-->
-    <!--    -->
-    <!--                            <p class="testimonial__description">I get a good impression, I carry -->
-    <!--                                out my project with all the possible quality and attention and -->
-    <!--                                support 24 hours a day.-->
-    <!--                            </p>-->
-    <!--                        </div>-->
-
-    <!--=============== TESTIMONIAL 3 ===============-->
-    <!--                        <div class="testimonial__content swiper-slide">-->
-    <!--                            <div class="testimonial__data">-->
-    <!--                                <div class="testimonial__header">-->
-    <!--                                    <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__img">-->
-    <!--        -->
-    <!--                                    <div>-->
-    <!--                                        <h3 class="testimonial__name">Raul Harris</h3>-->
-    <!--                                        <span class="testimonial__client">Client</span>-->
-    <!--                                    </div>-->
-    <!--                                </div>-->
-    <!--    -->
-    <!--                                <div>-->
-    <!--                                    <i class="uil uil-star testimonial__icon-star"></i>-->
-    <!--                                    <i class="uil uil-star testimonial__icon-star"></i>-->
-    <!--                                    <i class="uil uil-star testimonial__icon-star"></i>-->
-    <!--                                    <i class="uil uil-star testimonial__icon-star"></i>-->
-    <!--                                    <i class="uil uil-star testimonial__icon-star"></i>-->
-    <!--                                </div>-->
-    <!--                            </div>-->
-    <!--    -->
-    <!--                            <p class="testimonial__description">I get a good impression, I carry -->
-    <!--                                out my project with all the possible quality and attention and -->
-    <!--                                support 24 hours a day.-->
-    <!--                            </p>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                    <div class="swiper-pagination swiper-pagination-testimonial"></div>-->
-    <!--                </div>-->
-    <!--            </section>-->
-
     <!--==================== CONTACT ME ====================-->
     <section class="contact section" id="contact">
         <h2 class="section__title">Contact Me</h2>
@@ -719,36 +229,7 @@
                     </div>
                 </div>
             </div>
-
-            <!--                    <form action="" class="contact__form grid">-->
-            <!--                        <div class="contact__inputs grid">-->
-            <!--                            <div class="contact__content">-->
-            <!--                                <label for="" class="contact__label">Name</label>-->
-            <!--                                <input type="text" class="contact__input">-->
-            <!--                            </div>-->
-            <!--                            <div class="contact__content">-->
-            <!--                                <label for="" class="contact__label">Email</label>-->
-            <!--                                <input type="email" class="contact__input">-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                        <div class="contact__content">-->
-            <!--                            <label for="" class="contact__label">Project</label>-->
-            <!--                            <input type="text" class="contact__input">-->
-            <!--                        </div>-->
-            <!--                        <div class="contact__content">-->
-            <!--                            <label for="" class="contact__label">Message</label>-->
-            <!--                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>-->
-            <!--                        </div>-->
-
-            <!--                        <div>-->
-            <!--                            <a href="#" class="button button&#45;&#45;flex">-->
-            <!--                                Send Message-->
-            <!--                                <i class="uil uil-message button__icon"></i>-->
-            <!--                            </a>-->
-            <!--                        </div>-->
-            <!--                    </form>-->
         </div>
-
     </section>
 </main>
 
@@ -762,9 +243,6 @@
             </div>
 
             <ul class="footer__links">
-                <!--                        <li>-->
-                <!--                            <a href="#services" class="footer__link">Services</a>-->
-                <!--                        </li>-->
                 <li>
                     <a href="#portfolio" class="footer__link">Portfolio</a>
                 </li>
